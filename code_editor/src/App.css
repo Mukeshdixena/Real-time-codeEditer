@@ -1,3 +1,4 @@
+
 .homePageWrapper{
   height: 100vh;
   display: flex;
@@ -7,10 +8,9 @@
 }
 
 .formWrapper{
-  background-color: white;
+  background-color:#010102b6;
   padding: 20px;
   border-radius: 10px;
-  /* height: 500px; */
 }
 
 footer{
@@ -19,4 +19,25 @@ footer{
 }
 footer a{
   color: #4aee88;
+}
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel{
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.homePageLogo{
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.inputBox{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
 }
