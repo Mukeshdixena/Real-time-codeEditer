@@ -15,18 +15,19 @@ const Home = () => {
           <input type="text" className='inputBox' placeholder='ROOM ID' />
           <input type="text" className='inputBox' placeholder='USERNAME' />
 
-
+          <button className='btn joinBtn'>Join</button>
         </div>
 
-        <span className='createInfo'>
+        <div className='createInfo'>
+
 
           If you don't have an invite then create &nbsp;
 
           <a href='https//google.com' className='createNewBtn'>
-            <button className='btn joinBtn'>Join</button>
             new room
           </a>
-        </span>
+
+        </div>
       </div>
 
 
