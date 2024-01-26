@@ -67,7 +67,8 @@ footer a {
 }
 
 .createInfo{
-  text-align: center;
+  /* text-align: center; */
+  margin: 0 auto;
   margin-top: 10px; 
 }
 

@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import toast from 'react-hot-toast';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const Home = () => {
+
+  const [roomId, setRoomId] = useState('');
+  const [userName, setUserName] = useState('');
+  const createNewRoom = (e) => {
+
+    e.preventDefault();
+    const id = uuidv4();
+    setRoomId(id);
+    toast.success('New Room Created!');
+  }
+
   return (
     <div className='homePageWrapper'>
 
@@ -12,21 +27,21 @@ const Home = () => {
 
 
         <div className='inputGroup'>
-          <input type="text" className='inputBox' placeholder='ROOM ID' />
-          <input type="text" className='inputBox' placeholder='USERNAME' />
+          <input type="text" className='inputBox' placeholder='ROOM ID' onChange={(e) => setRoomId(e.target.value)} value={roomId} />
+          <input type="text" className='inputBox' placeholder='USERNAME' onChange={(e) => setUserName(e.target.value)} value={userName} />
 
           <button className='btn joinBtn'>Join</button>
-        </div>
 
-        <div className='createInfo'>
+          <span className='createInfo'>
 
 
-          If you don't have an invite then create &nbsp;
+            If you don't have an invite then create &nbsp;
 
-          <a href='https//google.com' className='createNewBtn'>
-            new room
-          </a>
+            <a onClick={createNewRoom} href="" className='createNewBtn'>
+              new room
+            </a>
 
+          </span>
         </div>
       </div>
 
