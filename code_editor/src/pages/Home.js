@@ -37,7 +37,7 @@ const Home = () => {
 
             If you don't have an invite then create &nbsp;
 
-            <a onClick={createNewRoom} href="" className='createNewBtn'>
+            <a onClick={createNewRoom} href="." className='createNewBtn'>
               new room
             </a>
 
