@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Client from '../components/Client.js'
-import Editor from '../components/Editor.js'
+import Editor from '../components/EditorArea.js'
 
 const EditorPage = () => {
 
