@@ -36,7 +36,7 @@ const EditorPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const [clients, setClients] = useState([
+  const [clients] = useState([
     { socketId: 1, userName: 'Mukesh' },
     { socketId: 2, userName: 'Sha MD' },
 
@@ -77,4 +77,7 @@ const EditorPage = () => {
   )
 }
 
+
 export default EditorPage
+
+
